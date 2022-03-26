@@ -106,6 +106,42 @@ body {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.nav-btn::before, .nav-btn::after {
+  height: 2px;
+  width: 200px;
+  content: "";
+  width: 4.5rem;
+  background-color: #fff;
+}
+
+.nav-btn::before {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+}
+
+.nav-btn::after {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
 }
 
 .header {
